@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Dine | Professional Catering & Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Google Fonts for that clean Wix look -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="navbar">
+        <div class="nav-container">
+            <img src="logo.jpg" alt="Status Dine Logo" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#menu">Catering Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#banquet">Venues</a></li>
+                    <li><a href="#contact" class="btn-outline">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content hidden">
+            <h1>Exquisite Catering & Dining</h1>
+            <p>Bringing fresh, vibrant, and unforgettable culinary experiences to your table.</p>
+            <button class="btn" onclick="document.getElementById('services').scrollIntoView();">Discover Our Menus</button>
+        </div>
+    </section>
+
+    <!-- Services / Ambiance Section -->
+    <section id="services" class="bg-offwhite">
+        <div class="container">
+            <h2 class="section-title hidden">Crafted for Your Special Moments</h2>
+            <div class="grid-2">
+                <div class="hidden image-collage">
+                    <img src="f6.webp" alt="Status Dine Interior" class="main-img">
+                    <img src="f2.jpg" alt="Chef Plating" class="overlay-img">
+                </div>
+                <div class="hidden text-content">
+                    <h3>Professional & Passionate</h3>
+                    <p>Whether you are hosting an intimate gathering or a grand corporate event, our dedicated team of chefs and event coordinators ensures every detail is perfect. We source the freshest ingredients to bring you a menu that looks as incredible as it tastes.</p>
+                    <ul class="service-list">
+                        <li>✓ Exquisite Table Settings</li>
+                        <li>✓ Custom Menu Curation</li>
+                        <li>✓ Professional Waitstaff</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Menu Section -->
+    <section id="menu">
+        <div class="container">
+            <h2 class="section-title hidden">Featured Culinary Selections</h2>
+            <div class="grid-3">
+                <div class="menu-card hidden">
+                    <div class="img-wrapper"><img src="r13.webp" alt="Spaghetti Marinara"></div>
+                    <div class="card-content">
+                        <h3>Spaghetti Marinara</h3>
+                        <p class="desc">Rustic Italian tomato sauce with capers, black olives, basil, and premium parmesan.</p>
+                        <p class="price">₹550.00</p>
+                        <button class="btn-small" onclick="addToCart('Spaghetti Marinara')">Order Online</button>
+                    </div>
+                </div>
+                <div class="menu-card hidden">
+                    <div class="img-wrapper"><img src="r11.webp" alt="Hunan Veggies Stuffed Dumplings"></div>
+                    <div class="card-content">
+                        <h3>Hunan Stuffed Dumplings</h3>
+                        <p class="desc">Delicate wrappers with Japanese mayo, teriyaki glaze, and garlic crisp spinach.</p>
+                        <p class="price">₹550.00</p>
+                        <button class="btn-small" onclick="addToCart('Stuffed Dumplings')">Order Online</button>
+                    </div>
+                </div>
+                <div class="menu-card hidden">
+                    <div class="img-wrapper"><img src="r4.webp" alt="Afghani Paneer & Makhna Tikka"></div>
+                    <div class="card-content">
+                        <h3>Afghani Paneer & Makhna</h3>
+                        <p class="desc">Served fresh from the grill with seasonal garnishes and light herbs.</p>
+                        <p class="price">₹520.00</p>
+                        <button class="btn-small" onclick="addToCart('Afghani Paneer')">Order Online</button>
+                    </div>
+                </div>
+                <div class="menu-card hidden">
+                    <div class="img-wrapper"><img src="r5.webp" alt="Korean Potato Wedges"></div>
+                    <div class="card-content">
+                        <h3>Korean Potato Wedges</h3>
+                        <p class="desc">Crispy wedges tossed in our signature sweet, spicy, and sticky sauce.</p>
+                        <p class="price">₹450.00</p>
+                        <button class="btn-small" onclick="addToCart('Korean Wedges')">Order Online</button>
+                    </div>
+                </div>
+                <div class="menu-card hidden">
+                    <div class="img-wrapper"><img src="r14.webp" alt="Tempura Crispy Veg"></div>
+                    <div class="card-content">
+                        <h3>Tempura Crispy Veg</h3>
+                        <p class="desc">Lightly batter-fried veggies tossed with vibrant signature seasonings.</p>
+                        <p class="price">₹450.00</p>
+                        <button class="btn-small" onclick="addToCart('Tempura Veg')">Order Online</button>
+                    </div>
+                </div>
+                <div class="menu-card hidden">
+                    <div class="img-wrapper"><img src="r12.webp" alt="Rabdi & Jalebi"></div>
+                    <div class="card-content">
+                        <h3>Rabdi & Jalebi</h3>
+                        <p class="desc">A traditional celebration dessert featuring rich reduced milk and crispy spirals.</p>
+                        <p class="price">₹350.00</p>
+                        <button class="btn-small" onclick="addToCart('Rabdi Jalebi')">Order Online</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="bg-offwhite">
+        <div class="container">
+            <h2 class="section-title hidden">A Feast for the Eyes</h2>
+            <div class="gallery-grid hidden">
+                <img src="r7.webp" alt="Chaat Special" class="gallery-img">
+                <img src="r8.webp" alt="Paneer Tikka" class="gallery-img">
+                <img src="r9.webp" alt="Chocolate Beverage" class="gallery-img">
+                <img src="r10.webp" alt="Global Sizzler Platter" class="gallery-img">
+                <img src="r3.webp" alt="Wok Tossed Veggies" class="gallery-img">
+                <img src="f1.webp" alt="Refined Table Setting" class="gallery-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Banquet & Venues -->
+    <section id="banquet">
+        <div class="container">
+            <div class="grid-2 align-center">
+                <div class="venue-text hidden">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 1rem;">Host Your Grand Event</h2>
+                    <p>From lush outdoor lawns to elegant indoor halls, Status Dine offers versatile spaces tailored for weddings, corporate retreats, and private parties.</p>
+                    <ul class="venue-list">
+                        <li><strong>Banquet Hall:</strong> 100 to 1500 Guests</li>
+                        <li><strong>Party Lawn:</strong> 100 to 800 Guests</li>
+                        <li><strong>Accommodations:</strong> 38 Premium Rooms</li>
+                        <li><strong>Corporate:</strong> Dedicated Conference Hall</li>
+                    </ul>
+                </div>
+                <div class="hidden">
+                    <img src="f4.webp" alt="Night Exterior View" class="rounded-img shadow-lg" style="margin-bottom: 1rem;">
+                    <img src="f5.webp" alt="Banquet Setup" class="rounded-img shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Form -->
+    <section id="contact" class="bg-green">
+        <div class="container">
+            <div class="form-wrapper hidden">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: var(--text-dark);">Book Our Services</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: #555;">Request a catering quote, book a banquet, or reserve a table.</p>
+                <form onsubmit="handleBooking(event)">
+                    <div class="grid-2 form-grid">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Jane Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email / Phone</label>
+                            <input type="text" placeholder="Contact details" required>
+                        </div>
+                    </div>
+                    <div class="grid-2 form-grid">
+                        <div class="form-group">
+                            <label>Event Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Service Type</label>
+                            <select required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="catering">Off-site Catering</option>
+                                <option value="banquet">Banquet Hall Booking</option>
+                                <option value="lawn">Party Lawn Booking</option>
+                                <option value="table">Table Reservation</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Additional Details</label>
+                        <textarea rows="4" placeholder="Guest count, dietary restrictions, or special requests..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-full">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Status Dine Catering & Events. All Rights Reserved.</p>
+            <p>Fresh Ingredients. Professional Service. Unforgettable Events.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaSleek - Your Trusted Pharmacy</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-prescription-bottle-medical"></i> PharmaSleek
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item text-center">
+                        <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#latest-medicines">New Arrivals</a> </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#offers">Offers</a> </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Empowering Health, Inspiring Wellness</h1>
+                <p>Discover a new era of pharmacy care with PharmaSleek. <br>Your trusted source for medications, expert advice, and a healthier tomorrow.</p>
+                <a href="#services" class="btn btn-primary btn-lg btn-hero">Explore Services</a>
+                <a href="#latest-medicines" class="btn btn-outline-light btn-lg btn-hero">New Medicines</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Pharmacy%20Website%20Template/welcome-to-pharmasleek.webp" alt="About PharmaSleek Team" class="img-fluid about-us-img">
+                </div>
+                <div class="col-lg-6 about-us-content">
+                    <div class="section-title text-start ps-lg-3">
+                        <h2 class="text-start">Welcome to PharmaSleek</h2>
+                    </div>
+                    <p class="ps-lg-3">PharmaSleek is more than just a pharmacy; we are your partners in health. Our mission is to provide accessible, high-quality pharmaceutical care, innovative health solutions, and compassionate support to every individual we serve.</p>
+                    <p class="ps-lg-3">We believe in a holistic approach to wellness, combining expert knowledge with a deep commitment to our community's health. Our values of integrity, patient-centricity, and excellence guide everything we do.</p>
+                    <ul class="list-unstyled mt-4 ps-lg-3">
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Personalized medication management</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Comprehensive range of health & wellness products</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Dedicated to fostering a healthier community</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Comprehensive Services</h2>
+                <p>Delivering excellence in pharmaceutical care, tailored to your needs.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-pills"></i></div>
+                        <h4>Prescription Services</h4>
+                        <p>Accurate, fast, and reliable prescription filling, with options for easy refills and medication synchronization.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-syringe"></i></div>
+                        <h4>Immunizations & Vaccines</h4>
+                        <p>Protect yourself and your loved ones with a wide range of vaccines, administered by our certified pharmacists.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-stethoscope"></i></div>
+                        <h4>Health Screenings</h4>
+                        <p>Convenient health monitoring services, including blood pressure, cholesterol, and glucose screenings.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-capsules"></i></div>
+                        <h4>OTC & Wellness Products</h4>
+                        <p>An extensive selection of over-the-counter medications, vitamins, supplements, and personal care items.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-shipping-fast"></i></div>
+                        <h4>Express Delivery</h4>
+                        <p>Get your prescriptions and health essentials delivered to your doorstep, quickly and discreetly.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-user-nurse"></i></div>
+                        <h4>Medication Therapy Management</h4>
+                        <p>Personalized consultations to review your medications, optimize effectiveness, and minimize side effects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Health Products</h2>
+                <p>Discover our curated selection of popular health and wellness essentials.</p>
+            </div>
+            <div class="swiper product-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Pharmacy%20Website%20Template/organic-vitamin-d3.webp" alt="Organic Vitamin D3">
+                            <div class="card-body">
+                                <h5 class="card-title">Organic Vitamin D3</h5>
+                                <p class="card-text text-muted">Essential for bone health and immune support.</p>
+                                <p class="price">$18.50</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm w-100">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Pharmacy%20Website%20Template/advanced-probiotic-blend.webp" alt="Advanced Probiotic Blend">
+                            <div class="card-body">
+                                <h5 class="card-title">Advanced Probiotic Blend</h5>
+                                <p class="card-text text-muted">Supports digestive balance and gut health.</p>
+                                <p class="price">$25.99</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm w-100">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Pharmacy%20Website%20Template/herbal-sleep-aid.webp" alt="Herbal Sleep Aid">
+                            <div class="card-body">
+                                <h5 class="card-title">Herbal Sleep Aid</h5>
+                                <p class="card-text text-muted">Natural formula for restful sleep.</p>
+                                <p class="price">$14.25</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm w-100">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Pharmacy%20Website%20Template/omega-3-fish-oil.webp" alt="Omega-3 Fish Oil">
+                            <div class="card-body">
+                                <h5 class="card-title">Omega-3 Fish Oil</h5>
+                                <p class="card-text text-muted">Supports heart and brain health.</p>
+                                <p class="price">$20.00</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm w-100">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="swiper-slide">
+                        <div class="product-card">
+                            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Pharmacy%20Website%20Template/adult-multivitamin-gummies.webp" alt="Adult Multivitamin Gummies">
+                            <div class="card-body">
+                                <h5 class="card-title">Adult Multivitamin Gummies</h5>
+                                <p class="card-text text-muted">Tasty way to get essential daily nutrients.</p>
+                                <p class="price">$16.99</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm w-100">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="latest-medicines" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>New Arrivals & Innovations</h2>
+                <p>Stay ahead with the latest advancements in pharmaceutical care and wellness products.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="medicine-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Pharmacy%20Website%20Template/newgen-painrelief-x.webp" alt="NewGen PainRelief X">
+                        <div class="card-body">
+                            <h5 class="card-title">NewGen PainRelief X</h5>
+                            <p class="card-text text-muted">Advanced formula for rapid pain relief.</p>
+                            <p class="price">$29.99</p>
+                            <a href="#" class="btn btn-primary btn-sm w-100">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="medicine-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Pharmacy%20Website%20Template/immunoboost-pro.webp" alt="ImmunoBoost Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">ImmunoBoost Pro</h5>
+                            <p class="card-text text-muted">Next-generation immune system support.</p>
+                            <p class="price">$34.50</p>
+                            <a href="#" class="btn btn-primary btn-sm w-100">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="medicine-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Pharmacy%20Website%20Template/cardiocare-plus.webp" alt="CardioCare Plus">
+                        <div class="card-body">
+                            <h5 class="card-title">CardioCare Plus</h5>
+                            <p class="card-text text-muted">Innovative support for heart health.</p>
+                            <p class="price">$45.00</p>
+                            <a href="#" class="btn btn-primary btn-sm w-100">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="medicine-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Pharmacy%20Website%20Template/neurosupport-max.webp" alt="NeuroSupport Max">
+                        <div class="card-body">
+                            <h5 class="card-title">NeuroSupport Max</h5>
+                            <p class="card-text text-muted">Cognitive function and brain health enhancer.</p>
+                            <p class="price">$52.75</p>
+                            <a href="#" class="btn btn-primary btn-sm w-100">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="offers" class="discount-offer-section">
+        <div class="container">
+            <h2>Limited Time Health Offers!</h2>
+            <p>Don't miss out on our exclusive discounts on selected health products and services. Your well-being, made more affordable.</p>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-8">
+                    <span class="display-4">Save up to 25%</span>
+                    <p class="lead">On all Vitamin & Supplement Brands this week!</p>
+                    <a href="#products" class="btn btn-light btn-lg">Shop Now & Save</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="why-choose-us" class="section-padding"> <div class="container">
+            <div class="section-title">
+                <h2>Why Entrust Your Health to PharmaSleek?</h2>
+                <p>Discover the PharmaSleek difference – where care, expertise, and convenience meet.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-hand-holding-medical"></i></div>
+                        <h5>Patient-First Approach</h5>
+                        <p>Your health and well-being are our top priorities. We provide personalized care and attention.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-users-cog"></i></div>
+                        <h5>Qualified & Caring Staff</h5>
+                        <p>Our team of experienced pharmacists and healthcare professionals is dedicated to your service.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                        <h5>Quality & Trust</h5>
+                        <p>We adhere to the highest standards of quality and ethics in all our products and services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Voices of Our Valued Patients</h2>
+                <p>Hear directly from those who have experienced the dedicated care at PharmaSleek.</p>
+            </div>
+            <div class="swiper testimonial-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="https://www.codewithfaraz.com/tools/placeholder?size=60x60&bgColor=FFCCBC&textColor=D84315&text=AS" alt="Alice Smith" class="avatar">
+                            <p class="quote">"The team at PharmaSleek is truly exceptional. They are not only knowledgeable but also incredibly caring. Their home delivery service is a game-changer for me!"</p>
+                            <p class="name">Alice S.</p>
+                            <p class="role">Long-term Patient</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="https://www.codewithfaraz.com/tools/placeholder?size=60x60&bgColor=CFD8DC&textColor=37474F&text=BJ" alt="Bob Johnson" class="avatar">
+                            <p class="quote">"I switched to PharmaSleek a year ago and couldn't be happier. The pharmacists take time to explain everything, and their app makes refills so easy."</p>
+                            <p class="name">Bob J.</p>
+                            <p class="role">Satisfied Customer</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                             <img src="https://www.codewithfaraz.com/tools/placeholder?size=60x60&bgColor=E1BEE7&textColor=6A1B9A&text=CW" alt="Clara Williams" class="avatar">
+                            <p class="quote">"Booking a health screening was simple and quick. The staff made me feel comfortable, and I got my results promptly. PharmaSleek is my go-to for health needs."</p>
+                            <p class="name">Clara W.</p>
+                            <p class="role">Health Conscious Individual</p>
+                        </div>
+                    </div>
+                     <div class="swiper-slide">
+                        <div class="testimonial-card">
+                             <img src="https://www.codewithfaraz.com/tools/placeholder?size=60x60&bgColor=D7CCC8&textColor=4E342E&text=DM" alt="David Miller" class="avatar">
+                            <p class="quote">"Their selection of wellness products is fantastic, and I always find the latest health supplements. The staff's recommendations are always spot on!"</p>
+                            <p class="name">David M.</p>
+                            <p class="role">Wellness Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section-padding"> <div class="container">
+            <div class="section-title">
+                <h2>Your Daily Dose of Wellness</h2>
+                <p>Explore insightful articles, tips, and news to empower your health journey.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="blog-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Pharmacy%20Website%20Template/mindful-eating-a-path-to-better-health.webp" alt="Mindful Eating: A Path to Better Health">
+                        <div class="card-body">
+                            <h5 class="card-title">Mindful Eating: A Path to Better Health</h5>
+                            <p class="card-text">Discover how mindful eating can transform your relationship with food and improve digestion.</p>
+                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="blog-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Pharmacy%20Website%20Template/the-benefits-of-a-digital-detox.webp" alt="Blog Post 2">
+                        <div class="card-body">
+                            <h5 class="card-title">The Benefits of a Digital Detox</h5>
+                            <p class="card-text">Learn why taking a break from screens can boost your mental clarity and reduce stress.</p>
+                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="blog-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Pharmacy%20Website%20Template/simple-ways-to-stay-active-daily.webp" alt="Blog Post 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Simple Ways to Stay Active Daily</h5>
+                            <p class="card-text">Incorporate more movement into your routine with these easy and effective tips.</p>
+                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="consultation" class="section-padding bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h2>Book a Personalized Consultation</h2>
+                        <p>Connect with our expert pharmacists for tailored advice and support.</p>
+                    </div>
+                    <div class="booking-form">
+                        <form id="consultationForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="consultName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="consultName" placeholder="e.g., John Doe" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="consultEmail" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="consultEmail" placeholder="e.g., name@example.com" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="consultPhone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control" id="consultPhone" placeholder="e.g., +1 (555) 123-4567" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="consultDate" class="form-label">Preferred Date <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="consultDate" placeholder="Select a date" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="consultService" class="form-label">Type of Consultation <span class="text-danger">*</span></label>
+                                <select class="form-select" id="consultService" required>
+                                    <option selected disabled value="">Please select a service...</option>
+                                    <option value="medication_review">Medication Review & Management</option>
+                                    <option value="vaccination_info">Vaccination & Immunization Advice</option>
+                                    <option value="health_screening_advice">Health Screening Follow-up</option>
+                                    <option value="wellness_planning">Wellness & Lifestyle Planning</option>
+                                    <option value="general_health_query">General Health Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="consultMessage" class="form-label">Additional Notes or Questions</label>
+                                <textarea class="form-control" id="consultMessage" rows="4" placeholder="Let us know if you have specific questions or concerns..."></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Request Appointment</button>
+                            </div>
+                        </form>
+                         <div id="consultationFormFeedback" class="mt-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section-padding faq-section"> <div class="container">
+            <div class="section-title">
+                <h2>Answers to Your Questions</h2>
+                <p>Find quick answers to common inquiries about PharmaSleek services and policies.</p>
+            </div>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How can I easily transfer my prescriptions to PharmaSleek?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Transferring your prescriptions is simple! You can call us with your current pharmacy's details, bring in your prescription bottles, or use our secure online transfer form on our website. Our team will handle the entire process smoothly for you.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What are the benefits of your home delivery service?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Our home delivery service is designed for your convenience. We offer free, fast, and discreet delivery of your prescriptions and selected health products right to your doorstep, saving you time and effort. We serve most local areas; please contact us to confirm eligibility.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Which insurance plans are accepted at PharmaSleek?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            PharmaSleek accepts a wide array of major insurance plans. To verify if your specific plan is covered, please call our pharmacy, visit us with your insurance card, or check our online insurance checker. Our staff is always ready to assist you.
+                        </div>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Are appointments required for vaccinations?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            For most routine vaccinations, such as flu shots, appointments are not strictly required, but they are recommended to minimize your wait time. For specialized travel vaccines or other specific immunizations, please call ahead or book an appointment online.
+                        </div>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            How does Medication Therapy Management (MTM) work?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Medication Therapy Management (MTM) is a personalized service where our pharmacists work closely with you and your doctor to ensure your medications are safe, effective, and appropriate for your health conditions. This includes a comprehensive medication review, identifying potential drug interactions, and creating a personalized medication action plan.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                    <h3>Stay Connected, Stay Healthy</h3>
+                    <p>Subscribe to the PharmaSleek newsletter for exclusive health insights, updates on new services, and special offers delivered to your inbox.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form id="newsletterForm" class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control form-control-lg" id="newsletterEmail" placeholder="Your Email Address" required aria-label="Email Address for Newsletter">
+                            <button class="btn btn-primary" type="submit">Subscribe Now</button>
+                        </div>
+                        <div id="newsletterFeedback" class="mt-2 text-center text-lg-start"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Connect With Us Today</h2>
+                <p>We are here to assist you. Reach out with your questions, or plan your visit to our pharmacy.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="contact-form h-100 d-flex flex-column">
+                        <h4 class="mb-4">Send a Secure Message</h4>
+                        <form id="contactForm" class="flex-grow-1">
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="contactName" placeholder="Your Full Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="contactEmail" placeholder="your.email@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactSubject" class="form-label">Subject <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="contactSubject" placeholder="Reason for Contact" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label">Your Message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Please type your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                        </form>
+                        <div id="contactFormFeedback" class="mt-3"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="mb-4">Our Pharmacy Details</h4>
+                    <div class="contact-info-item">
+                        <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <div>
+                            <strong>Visit Us:</strong>
+                            123 Health St, Wellness City, HC 45678, USA
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="icon"><i class="fas fa-phone-volume"></i></div>
+                        <div>
+                            <strong>Call Us:</strong>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </div>
+                    </div>
+                     <div class="contact-info-item">
+                        <div class="icon"><i class="fas fa-envelope-open-text"></i></div>
+                        <div>
+                            <strong>Email Us:</strong>
+                            <a href="mailto:info@pharmasleek.com">info@pharmasleek.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="icon"><i class="far fa-clock"></i></div>
+                        <div>
+                            <strong>Operating Hours:</strong>
+                            Mon - Fri: 8:30 AM - 7:30 PM<br>
+                            Sat: 9:00 AM - 4:00 PM<br>
+                            Sun: Closed
+                        </div>
+                    </div>
+                    <div class="map-container mt-4">
+                        <iframe title="Google Maps Location of PharmaSleek" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2199008396003!2d-73.98513088459314!3d40.75048187932787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259015532470d%3A0x5c6f395012f052a0!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1620056789012!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5><i class="fas fa-prescription-bottle-medical me-2"></i>PharmaSleek</h5>
+                    <p class="small">Your dedicated partner in achieving optimal health and wellness. We are committed to providing exceptional pharmaceutical care, expert advice, and a comprehensive range of health products.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#latest-medicines">New In</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#consultation">Book Consultation</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Follow Our Journey</h5>
+                     <p class="small mb-2">Stay updated with our latest news and health tips on social media.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © <span id="currentYear"></span> PharmaSleek. All Rights Reserved.
+                Designed with <i class="fas fa-heart text-danger"></i> by <a href="https://codewithfaraz.com/" target="_blank" rel="noopener noreferrer">codewithfaraz.com</a>.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>

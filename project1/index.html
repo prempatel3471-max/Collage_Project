@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Dine | Premium Family Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for a bold, modern restaurant look -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <a href="#home" class="logo-link">
+                <img src="logo.jpg" alt="Status Dine" class="logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">OUR STORY</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#banquet">EVENTS</a></li>
+                    <li><a href="#reserve" class="btn-nav">RESERVE A TABLE</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Parallax) -->
+    <section id="home" class="hero parallax">
+        <div class="overlay"></div>
+        <div class="hero-content fade-in-up">
+            <h1>TASTE THE EXTRAORDINARY</h1>
+            <p>Crafted for Refined Dining & Memorable Family Moments</p>
+            <a href="#menu" class="btn-solid">EXPLORE THE MENU</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container grid-half align-center">
+            <div class="text-block fade-in-up">
+                <h4 class="subtitle">WELCOME TO STATUS DINE</h4>
+                <h2>WHERE EVERY ARRIVAL FEELS LIKE ROYALTY</h2>
+                <div class="divider"></div>
+                <p>Experience a perfect blend of culinary excellence and architectural grandeur. At Status Dine, we believe in creating more than just meals; we create memories. Our chefs meticulously craft every dish using premium ingredients, serving global flavors in a breathtaking environment.</p>
+                <a href="#reserve" class="btn-outline">BOOK YOUR EXPERIENCE</a>
+            </div>
+            <div class="image-collage fade-in-up">
+                <img src="f6.webp" alt="Restaurant Interior" class="img-main shadow">
+                <img src="f1.webp" alt="Table Setting" class="img-overlap shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Menu Section -->
+    <section id="menu" class="section-padding bg-light">
+        <div class="container text-center">
+            <h4 class="subtitle">DISCOVER OUR FLAVORS</h4>
+            <h2 class="mb-lg">SIGNATURE DISHES</h2>
+            
+            <div class="grid-thirds">
+                <!-- Card 1 -->
+                <div class="card fade-in-up">
+                    <div class="card-img-wrap">
+                        <img src="r13.webp" alt="Spaghetti Marinara">
+                    </div>
+                    <div class="card-body">
+                        <h3>SPAGHETTI MARINARA</h3>
+                        <p>Rustic Italian tomato sauce with capers, black olives, basil, and parmesan.</p>
+                        <span class="price">₹550.00</span>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="card-img-wrap">
+                        <img src="r11.webp" alt="Stuffed Dumplings">
+                    </div>
+                    <div class="card-body">
+                        <h3>HUNAN STUFFED DUMPLINGS</h3>
+                        <p>Served with Japanese mayo, teriyaki mayo and chilly garlic crisp.</p>
+                        <span class="price">₹550.00</span>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="card-img-wrap">
+                        <img src="r4.webp" alt="Afghani Paneer">
+                    </div>
+                    <div class="card-body">
+                        <h3>AFGHANI PANEER TIKKA</h3>
+                        <p>Fresh from the grill, served with seasonal garnishes and spices.</p>
+                        <span class="price">₹520.00</span>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card fade-in-up">
+                    <div class="card-img-wrap">
+                        <img src="r5.webp" alt="Korean Potato Wedges">
+                    </div>
+                    <div class="card-body">
+                        <h3>KOREAN POTATO WEDGES</h3>
+                        <p>Crispy wedges tossed in our signature sweet, spicy, and sticky sauce.</p>
+                        <span class="price">₹450.00</span>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="card-img-wrap">
+                        <img src="r14.webp" alt="Tempura Veg">
+                    </div>
+                    <div class="card-body">
+                        <h3>TEMPURA CRISPY VEG</h3>
+                        <p>Lightly batter-fried veggies tossed with vibrant signature seasonings.</p>
+                        <span class="price">₹450.00</span>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="card-img-wrap">
+                        <img src="r12.webp" alt="Rabdi Jalebi">
+                    </div>
+                    <div class="card-body">
+                        <h3>RABDI & JALEBI</h3>
+                        <p>Traditional Indian dessert with rich reduced milk and crispy spirals.</p>
+                        <span class="price">₹350.00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem;">
+                <a href="#order" class="btn-solid" onclick="alert('Full Online Ordering System Loading...')">ORDER ONLINE NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Edge-to-Edge Gallery -->
+    <section id="gallery">
+        <div class="gallery-container flex-wrap">
+            <div class="gallery-item"><img src="r7.webp" alt="Dish 1"></div>
+            <div class="gallery-item"><img src="r8.webp" alt="Dish 2"></div>
+            <div class="gallery-item"><img src="r9.webp" alt="Beverage"></div>
+            <div class="gallery-item"><img src="r10.webp" alt="Sizzler"></div>
+            <div class="gallery-item"><img src="r3.webp" alt="Wok Dish"></div>
+            <div class="gallery-item"><img src="f2.jpg" alt="Chef"></div>
+        </div>
+    </section>
+
+    <!-- Banquet & Events (Parallax Split) -->
+    <section id="banquet" class="section-padding bg-dark">
+        <div class="container grid-half align-center">
+            <div class="image-stack fade-in-up">
+                <img src="f4.webp" alt="Venue Exterior" class="img-responsive shadow">
+                <img src="f5.webp" alt="Banquet Setup" class="img-responsive shadow mt-negative">
+            </div>
+            <div class="text-block text-white fade-in-up">
+                <h4 class="subtitle">CELEBRATE WITH US</h4>
+                <h2 style="color: #fff;">HOST YOUR GRAND EVENT</h2>
+                <div class="divider"></div>
+                <p style="color: #ccc;">From lush outdoor lawns to elegant indoor halls, Status Dine offers versatile spaces tailored for weddings, corporate retreats, and private parties.</p>
+                <ul class="clean-list">
+                    <li><span>✦</span> Banquet Hall (100 to 1500 Persons)</li>
+                    <li><span>✦</span> Party Lawn (100 to 800 Persons)</li>
+                    <li><span>✦</span> 38 Premium Accommodating Rooms</li>
+                    <li><span>✦</span> Dedicated Conference Hall</li>
+                </ul>
+                <a href="#reserve" class="btn-solid mt-sm">INQUIRE NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Form -->
+    <section id="reserve" class="section-padding parallax form-parallax">
+        <div class="overlay-darker"></div>
+        <div class="container relative z-10">
+            <div class="form-box fade-in-up">
+                <div class="text-center mb-md">
+                    <h2>RESERVE A TABLE</h2>
+                    <p>Join us for an unforgettable dining experience.</p>
+                </div>
+                <form id="reservation-form" onsubmit="handleReservation(event)">
+                    <div class="grid-half gap-sm">
+                        <input type="text" placeholder="Full Name" required class="input-field">
+                        <input type="tel" placeholder="Phone Number" required class="input-field">
+                    </div>
+                    <div class="grid-thirds gap-sm mt-sm">
+                        <input type="date" required class="input-field">
+                        <input type="time" required class="input-field">
+                        <select required class="input-field">
+                            <option value="" disabled selected>Guests</option>
+                            <option value="2">2 People</option>
+                            <option value="4">4 People</option>
+                            <option value="6">6 People</option>
+                            <option value="8+">8+ People</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-solid btn-full mt-md">CONFIRM RESERVATION</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <img src="logo.jpg" alt="Status Dine" class="footer-logo">
+            <p class="footer-tagline">CRAFTED FOR REFINED DINING</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#banquet">Events</a>
+                <a href="#reserve">Reservations</a>
+            </div>
+            <p class="copyright">&copy; 2026 Status Dine. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

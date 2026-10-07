@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Dine | A Culinary Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Elegant Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Transparent to Solid Navbar -->
+    <header id="navbar">
+        <div class="logo">
+            <img src="670226002_18091863955921790_3690312371251393535_n.jpg" alt="Status Dine Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#" id="cart-icon">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Full Screen Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-bg" style="background-image: url('671763331_18092123335921790_2355493966241578523_n.webp');"></div>
+        <div class="hero-content">
+            <h1>Every arrival feels like Royalty</h1>
+            <p>Experience the pinnacle of refined dining.</p>
+            <a href="#menu" class="btn-primary">Discover the Menu</a>
+        </div>
+    </section>
+
+    <!-- Split Layout: Our Story -->
+    <section id="story" class="split-section">
+        <div class="split-text">
+            <h2>Crafted for Refined Dining</h2>
+            <div class="divider"></div>
+            <p>At Status Dine, we believe that a meal is more than just food; it is an experience that lingers in your memory. Our expert chefs meticulously curate every dish, ensuring a perfect harmony of authentic flavors and modern presentation.</p>
+            <p>Join us in an atmosphere designed to make every moment feel extraordinary.</p>
+        </div>
+        <div class="split-image">
+            <img src="726768070_18105242623921790_2944952234301582402_n.jpg" alt="Chef plating a delicate dish">
+        </div>
+    </section>
+
+    <!-- Parallax Banner -->
+    <section class="parallax-banner" style="background-image: url('730382010_18107478253921790_772507361441482792_n - Copy.webp');">
+        <div class="banner-overlay">
+            <h2>An Ambiance of Elegance</h2>
+        </div>
+    </section>
+
+    <!-- Menu Section with Filters -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Culinary Masterpieces</h2>
+                <div class="divider center"></div>
+                <p>Lunch Time: 11:00 AM to 3:00 PM | Dinner Time: 6:00 PM to 11:00 PM | GST Tax Applicable as per Government Rules</p>
+            </div>
+            
+            <nav class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="soups">Soups</button>
+                <button class="filter-btn" data-filter="beverages">Mocktails & Juices</button>
+                <button class="filter-btn" data-filter="sushi">Sushi & Dimsums</button>
+                <button class="filter-btn" data-filter="chaats">Chaats</button>
+                <button class="filter-btn" data-filter="pizzas">Pizzas</button>
+                <button class="filter-btn" data-filter="pastas">Pastas</button>
+                <button class="filter-btn" data-filter="paneer">Paneer Mains</button>
+                <button class="filter-btn" data-filter="kofta">Kofta Mains</button>
+                <button class="filter-btn" data-filter="veggies">Veggies Mains</button>
+                <button class="filter-btn" data-filter="breads">Breads</button>
+                <button class="filter-btn" data-filter="globalsizzlers">Global & Sizzlers</button>
+                <button class="filter-btn" data-filter="salads">Salads & Sides</button>
+            </nav>
+
+            <div class="menu-list">
+                <!-- SOUPS -->
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>3 Cheese Corn Spinach (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹300.00</span>
+                    </div>
+                    <p class="item-desc">Cheddar, parmesan and cream cheese with crackling spinach</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="3 Cheese Corn Spinach" data-price="300">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>Bangkok Hot & Sour (230ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹300.00</span>
+                    </div>
+                    <p class="item-desc">Thai style vegetable soup flavoured with kaffir lime, Lemon grass and galangal ingredients on side</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Bangkok Hot & Sour" data-price="300">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>Vietnamese Manchow (230ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹300.00</span>
+                    </div>
+                    <p class="item-desc">Vietnamese style spicy broth with julienne of Vegetable, noodles & leafy vegetables</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Vietnamese Manchow" data-price="300">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>Zuppa D Veg - Leeks (230ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹330.00</span>
+                    </div>
+                    <p class="item-desc">Truffle oil, thyme, parmesan and double cream</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Zuppa D Veg - Leeks" data-price="330">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>Tomato Pepper Soup (230ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹300.00</span>
+                    </div>
+                    <p class="item-desc">Feta cheese, corn flakes, beans, celery, jalapenos, Chopped peppers and tortilla</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Tomato Pepper Soup" data-price="300">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>Smoked Pumpkin Broccoli (230ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹330.00</span>
+                    </div>
+                    <p class="item-desc">Cheddar, broccoli, cream, broccoli grates and pumpkin cream</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Smoked Pumpkin Broccoli" data-price="330">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>Sweet Corn Lemon Corriander (230ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹300.00</span>
+                    </div>
+                    <p class="item-desc">Broth of corn, kaffir lime, corriander and lemon zest.</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Sweet Corn Lemon Corriander" data-price="300">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>Khow Suey (230ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹350.00</span>
+                    </div>
+                    <p class="item-desc">Topped with brown onions, crispy potatoes and Served with various accompaniments</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Khow Suey" data-price="350">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>Cream of Tomato Basil (230ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹300.00</span>
+                    </div>
+                    <p class="item-desc">Served with cheese grill slice</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Cream of Tomato Basil" data-price="300">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>Indonesian Shoba Laska Soup (230ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹300.00</span>
+                    </div>
+                    <p class="item-desc">Aromatic soup flavoured with coconut & kaffir lime</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Indonesian Shoba Laska Soup" data-price="300">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>Crockpot Thukpa (230ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹330.00</span>
+                    </div>
+                    <p class="item-desc">Tibetian style hot & spicy soup with ingredients on side</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Crockpot Thukpa" data-price="330">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>Kafir Lemon Coriander (230ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹300.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Kafir Lemon Coriander" data-price="300">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>Mexican Tortilla Soup (230ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹300.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Mexican Tortilla Soup" data-price="300">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="soups">
+                    <div class="item-details">
+                        <h3>Mushroom Cappuccino (230ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹350.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Mushroom Cappuccino" data-price="350">Add to Cart</button>
+                </div>
+
+                <!-- MOCKTAILS & FRESH JUICE -->
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-details">
+                        <h3>3 Fruit Fizz (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹270.00</span>
+                    </div>
+                    <p class="item-desc">Fresh kiwi, pineapple & green grape juice topped with aerated beverages</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="3 Fruit Fizz" data-price="270">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-details">
+                        <h3>Orange & Blood Orange (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹270.00</span>
+                    </div>
+                    <p class="item-desc">Orange juice, grenadine, lime juice & cherries</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Orange & Blood Orange" data-price="270">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-details">
+                        <h3>Watermelon Pomo Fizz (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹270.00</span>
+                    </div>
+                    <p class="item-desc">With fresh watermelon, mint, lemon & ginger ale. Finished with aerated lime water</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Watermelon Pomo Fizz" data-price="270">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-details">
+                        <h3>The Holy Water (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹270.00</span>
+                    </div>
+                    <p class="item-desc">Litchi juice with few drops of blue curaçao, lemon & jalapeno. Served in salt rimmed glass</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="The Holy Water" data-price="270">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-details">
+                        <h3>Passion Fruit & Mint Mojito (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹270.00</span>
+                    </div>
+                    <p class="item-desc">With mint leaves, lemon juice & pomegranate seeds</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Passion Fruit & Mint Mojito" data-price="270">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-details">
+                        <h3>Peach Blueberry Sangaria (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹270.00</span>
+                    </div>
+                    <p class="item-desc">Grape juice, apple cider & carbonated water</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Peach Blueberry Sangaria" data-price="270">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-details">
+                        <h3>Lebanon Rose Mojito (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹270.00</span>
+                    </div>
+                    <p class="item-desc">Lemon juice, sweet lime extract, rose flavor & rose petals</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Lebanon Rose Mojito" data-price="270">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-details">
+                        <h3>Guava Margharita (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹270.00</span>
+                    </div>
+                    <p class="item-desc">Salt rim & amaretto</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Guava Margharita" data-price="270">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-details">
+                        <h3>Fresh Lime Soda (Salt / Sweet) (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹250.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Fresh Lime Soda" data-price="250">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-details">
+                        <h3>Punjabi Lassi (Salt / Sweet) (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹270.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Punjabi Lassi" data-price="270">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-details">
+                        <h3>Fresh Orange Juice (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹280.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Fresh Orange Juice" data-price="280">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-details">
+                        <h3>Kiwi Basil (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹280.00</span>
+                    </div>
+                    <p class="item-desc">Basil seeds & elderflower</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Kiwi Basil" data-price="280">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-details">
+                        <h3>Lychee Pineapple (300ml)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹280.00</span>
+                    </div>
+                    <p class="item-desc">Passion fruit & elderflower</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Lychee Pineapple" data-price="280">Add to Cart</button>
+                </div>
+
+                <!-- SUSHI & DIMSUMS -->
+                <div class="menu-item" data-category="sushi">
+                    <div class="item-details">
+                        <h3>Turffle Edamamme Chestnut Dumplings (6pcs)(240g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">In massaman curry, chilly oil, tempura crisp and kaffir lime</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Turffle Edamamme Chestnut Dumplings" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="item-details">
+                        <h3>Hunan Veggies Stuffed Dumplings (6pcs)(240g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">Japanese mayo, teriyaki mayo and chilly garlic crisp fried spinach</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Hunan Veggies Stuffed Dumplings" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="item-details">
+                        <h3>Mushroom Cheese Dumplings (6pcs)(240g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">Green khau suey dip, cruspy garlic and fried onions</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Mushroom Cheese Dumplings" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="item-details">
+                        <h3>Teriyaki Tempura Sushi (6pcs)(240g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹600.00</span>
+                    </div>
+                    <p class="item-desc">Gari, wasabi and okonomiyaki topping</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Teriyaki Tempura Sushi" data-price="600">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="item-details">
+                        <h3>Newyork Style Sushi - Chipotle (6pcs)(240g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹600.00</span>
+                    </div>
+                    <p class="item-desc">Avocado cream cheese edamamme & wasabi cream</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Newyork Style Sushi - Chipotle" data-price="600">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="item-details">
+                        <h3>Sichuan Tempura Bao (6pcs)(240g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <p class="item-desc">Tempura veggies tosssed in sichuan hoisin sauce. Simple mayo piping</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Sichuan Tempura Bao" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="item-details">
+                        <h3>Kung Pao Paneer Bao (6pcs)(240g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <p class="item-desc">Served topped with 3 peppers & hot sauce mayo piping</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Kung Pao Paneer Bao" data-price="500">Add to Cart</button>
+                </div>
+
+                <!-- SIGNATURE CHAATS -->
+                <div class="menu-item" data-category="chaats">
+                    <div class="item-details">
+                        <h3>Thai Pav Bhaji Ki Chaat (260g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹350.00</span>
+                    </div>
+                    <p class="item-desc">Kafir lime butter tossed mini pavs & green & red thai bhaji</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Thai Pav Bhaji Ki Chaat" data-price="350">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="chaats">
+                    <div class="item-details">
+                        <h3>Chandrakala Ki Chaat (260g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹350.00</span>
+                    </div>
+                    <p class="item-desc">Spicy tamatar ki chaat with sweet rasa boondi, ratlami sev & crispy wontons</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Chandrakala Ki Chaat" data-price="350">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="chaats">
+                    <div class="item-details">
+                        <h3>Tempura Zatar Palak Patte Ki Chaat (260g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <p class="item-desc">Guacamole, zatar, peach tamarind pulp, chilly oil & yogurt</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Tempura Zatar Palak Patte Ki Chaat" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="chaats">
+                    <div class="item-details">
+                        <h3>Spicy Aam Papad Dahi Wada (260g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹350.00</span>
+                    </div>
+                    <p class="item-desc">Kurkuri bhindi & kurkure</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Spicy Aam Papad Dahi Wada" data-price="350">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="chaats">
+                    <div class="item-details">
+                        <h3>Jalebi Ki Chaat (260g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹450.00</span>
+                    </div>
+                    <p class="item-desc">Bhaji masala, charra aloo and creamy yogurt</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Jalebi Ki Chaat" data-price="450">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="chaats">
+                    <div class="item-details">
+                        <h3>Paani Poori (8pcs poori & 3water)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹200.00</span>
+                    </div>
+                    <p class="item-desc">Sooji ke golgappe, achari tamarind chutney, Kasundi peanut aloo singoda masala</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Paani Poori" data-price="200">Add to Cart</button>
+                </div>
+
+                <!-- CRUST PIZZA 9" -->
+                <div class="menu-item" data-category="pizzas">
+                    <div class="item-details">
+                        <h3>Aka 3 Cheese Mushrooms</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹590.00</span>
+                    </div>
+                    <p class="item-desc">Onions, mushrooms, truffle oil, fresh leaves, capers, tomatoes and red pesto</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Aka 3 Cheese Mushrooms" data-price="590">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pizzas">
+                    <div class="item-details">
+                        <h3>Paris Love</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">Mozarella, cream cheese, cheddar, caramelised onions, Balsamic, walnuts, broccoli, water chestnut</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Paris Love" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pizzas">
+                    <div class="item-details">
+                        <h3>Cheesey Margherita</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹590.00</span>
+                    </div>
+                    <p class="item-desc">Pesto, tomato pazzatta, aragula, avocado, sundried Tomatoes, black olives, jalapeno, mozarella, parmesan</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Cheesey Margherita" data-price="590">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pizzas">
+                    <div class="item-details">
+                        <h3>Teriyaki Pizza</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹590.00</span>
+                    </div>
+                    <p class="item-desc">Sriracha tomato sauce, persian salad, teriyaki Cottage cheese, chilly garlic crisp and mozarella</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Teriyaki Pizza" data-price="590">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pizzas">
+                    <div class="item-details">
+                        <h3>The Greek</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">Spinach, crumbled cottage cheese, corn, goat cheese, cheddar and bechamel</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="The Greek" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pizzas">
+                    <div class="item-details">
+                        <h3>Sriracha Paneer Tikka</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹590.00</span>
+                    </div>
+                    <p class="item-desc">Charcoal roasted paneer tikka spread over the pizza Generously topped with cheese & seasoning</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Sriracha Paneer Tikka" data-price="590">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pizzas">
+                    <div class="item-details">
+                        <h3>Pizza Veggie Delight</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">Veggie over load pizza with mozarella, garlic mayo and feta cheese</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Pizza Veggie Delight" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pizzas">
+                    <div class="item-details">
+                        <h3>Cheese Chilly Pizza</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">Our take on classical cheese chilly in form of pizza with Chutney spread, cheddar cheese and fried chillies</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Cheese Chilly Pizza" data-price="550">Add to Cart</button>
+                </div>
+
+                <!-- PASTAS -->
+                <div class="menu-item" data-category="pastas">
+                    <div class="item-details">
+                        <h3>Penne Pasta Del Barone (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">Parmesan cheese, cream sauce and red sauce</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Penne Pasta Del Barone" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pastas">
+                    <div class="item-details">
+                        <h3>Spaghetti Marinara (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">Rustic italian tomato sauce with capers, black olives, Basil, parmesan can select your pasta</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Spaghetti Marinara" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pastas">
+                    <div class="item-details">
+                        <h3>Mix Pasta Ala Norma (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">Ricotta, basil, nuts, zucchini, olives and tomato sauce with parmesan</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Mix Pasta Ala Norma" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pastas">
+                    <div class="item-details">
+                        <h3>Al Pesto Genovese (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹590.00</span>
+                    </div>
+                    <p class="item-desc">Basil pinenut pesto with burrata cheese, basil oil and parmesan</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Al Pesto Genovese" data-price="590">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pastas">
+                    <div class="item-details">
+                        <h3>Ravioli Cacio Peppe (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹590.00</span>
+                    </div>
+                    <p class="item-desc">Cheddar cheese sauce with burnt blackpepper</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Ravioli Cacio Peppe" data-price="590">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pastas">
+                    <div class="item-details">
+                        <h3>Penne Alfredo Agli Olio (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">Creamy fettucini with italian style burt chilly oil</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Penne Alfredo Agli Olio" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pastas">
+                    <div class="item-details">
+                        <h3>Baked Lasagne (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹590.00</span>
+                    </div>
+                    <p class="item-desc">Layered Italian pasta sheets with veggies, parmesan, Mozrella and classic Italian pasatta</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Baked Lasagne" data-price="590">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pastas">
+                    <div class="item-details">
+                        <h3>Chipotle Baked Macaroni & Tandoori Pineapple (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Chipotle Baked Macaroni & Tandoori Pineapple" data-price="500">Add to Cart</button>
+                </div>
+
+                <!-- MAIN COURSE - PANEER -->
+                <div class="menu-item" data-category="paneer">
+                    <div class="item-details">
+                        <h3>Paneer Makhna Khatta Pyaz (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <p class="item-desc">Tomato masala, pickled onions, makhna</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Paneer Makhna Khatta Pyaz" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <div class="item-details">
+                        <h3>Delhi Style Butter Masala (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <p class="item-desc">Tandoori paneer tikka, fenugreek flavoured butter masala</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Delhi Style Butter Masala" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <div class="item-details">
+                        <h3>Paneer Tikka Kalimirch Masala (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <p class="item-desc">Stuffed cottage cheese served in black pepper cashew gravy</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Paneer Tikka Kalimirch Masala" data-price="520">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <div class="item-details">
+                        <h3>Mughlai Mushroom Mutter Paneer (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <p class="item-desc">Poppy seed cashew yogurt gravy, coriander green chilly paste</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Mughlai Mushroom Mutter Paneer" data-price="520">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <div class="item-details">
+                        <h3>Stuffed Paneer Peshawari (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <p class="item-desc">Crumbles of cottage cheese, cooked in masala gravy served creamy curry</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Stuffed Paneer Peshawari" data-price="520">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <div class="item-details">
+                        <h3>Cheesy Achari Paneer Awadh Masala (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <p class="item-desc">Mustard marinated paneer tikka with peppers in tomato awadhi masala</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Cheesy Achari Paneer Awadh Masala" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <div class="item-details">
+                        <h3>Malai Paneer Saag (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <p class="item-desc">With makhna in creamy and garlicy spinach gravy</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Malai Paneer Saag" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <div class="item-details">
+                        <h3>Paneer Walnut Makhni (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <p class="item-desc">Stuffed paneer pinwheel in pepper spiced tomato pudhina shorba masala</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Paneer Walnut Makhni" data-price="520">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <div class="item-details">
+                        <h3>Sriracha Paneer Tikka Lebabdaar (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <p class="item-desc">Tandoor grilled sriracha paneer in classical lebabadar masala</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Sriracha Paneer Tikka Lebabdaar" data-price="520">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <div class="item-details">
+                        <h3>Paneer Bhurji - Brown Gravy (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Paneer Bhurji - Brown Gravy" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <div class="item-details">
+                        <h3>Paneer Tawa Bhuna Masala (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Paneer Tawa Bhuna Masala" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <div class="item-details">
+                        <h3>Paneer Pasanda / Toofani / Palak Paneer (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Paneer Pasanda / Toofani / Palak Paneer" data-price="520">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <div class="item-details">
+                        <h3>Kaju Paneer Masala / Paneer Corn Methi Masala (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Kaju Paneer Masala" data-price="520">Add to Cart</button>
+                </div>
+
+                <!-- MAIN COURSE - KOFTA -->
+                <div class="menu-item" data-category="kofta">
+                    <div class="item-details">
+                        <h3>Avadhi Kofta (380g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <p class="item-desc">Cottage cheese, nuts & khoya dumplings, dry fenugreek, roasted tomato sauce</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Avadhi Kofta" data-price="520">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="kofta">
+                    <div class="item-details">
+                        <h3>Cheesy Aloo Mutter Kofta (380g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <p class="item-desc">Lotus root dumplings, lotus chips, fenugreek scented cashew cream sauce</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Cheesy Aloo Mutter Kofta" data-price="520">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="kofta">
+                    <div class="item-details">
+                        <h3>Tandoori Pholon Ka Kofta, Peshawari Curry (380g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <p class="item-desc">Spice grilled mash of tandoori flowers in lahori style yellow curry & burnt chilly oil</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Tandoori Pholon Ka Kofta" data-price="520">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="kofta">
+                    <div class="item-details">
+                        <h3>Patrani Paneer - Goan Curry (380g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">Colocasia leaves wrapped cottage cheese served in spicy tangy goan curry</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Patrani Paneer - Goan Curry" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="kofta">
+                    <div class="item-details">
+                        <h3>Cheese Butter Masala (380g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Cheese Butter Masala" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="kofta">
+                    <div class="item-details">
+                        <h3>Kofta Shaam Savera (380g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">A classic prepartion of kofta in brown gravy</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Kofta Shaam Savera" data-price="550">Add to Cart</button>
+                </div>
+
+                <!-- MAIN COURSE - VEGGIES -->
+                <div class="menu-item" data-category="veggies">
+                    <div class="item-details">
+                        <h3>Bharwan Aloo Peshawari (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹450.00</span>
+                    </div>
+                    <p class="item-desc">Tandoori stuffed potato roulade in yellow peshawari style gravy, crispy spinach</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Bharwan Aloo Peshawari" data-price="450">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="veggies">
+                    <div class="item-details">
+                        <h3>Corn Palak Masala (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <p class="item-desc">Cream cheese, spinach puree, fried garlic</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Corn Palak Masala" data-price="520">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="veggies">
+                    <div class="item-details">
+                        <h3>Vegetable Kurchan (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹450.00</span>
+                    </div>
+                    <p class="item-desc">Caramelised onion tomato masala with whole spices and fried chilly</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Vegetable Kurchan" data-price="450">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="veggies">
+                    <div class="item-details">
+                        <h3>Stuffed Bhindi Tamatar Malai Masala (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹450.00</span>
+                    </div>
+                    <p class="item-desc">Cashew curry and fried curry leaves</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Stuffed Bhindi Tamatar Malai Masala" data-price="450">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="veggies">
+                    <div class="item-details">
+                        <h3>Mushroom / Vegetable Matar Lebabdar (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Mushroom / Vegetable Matar Lebabdar" data-price="520">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="veggies">
+                    <div class="item-details">
+                        <h3>Roasted Tadka Vegetables Korma (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹450.00</span>
+                    </div>
+                    <p class="item-desc">Creamy cashew yellow curry with red chilly tadka</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Roasted Tadka Vegetables Korma" data-price="450">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="veggies">
+                    <div class="item-details">
+                        <h3>Kadhai Makhna Vegetable (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹450.00</span>
+                    </div>
+                    <p class="item-desc">Array of mix veggies in brown onion masala with fox nuts</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Kadhai Makhna Vegetable" data-price="450">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="veggies">
+                    <div class="item-details">
+                        <h3>Spicy Kaju Curry (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Spicy Kaju Curry" data-price="520">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="veggies">
+                    <div class="item-details">
+                        <h3>Tandoori Veg Tikka Lebabdar (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹450.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Tandoori Veg Tikka Lebabdar" data-price="450">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="veggies">
+                    <div class="item-details">
+                        <h3>Khoya Kaju - Sweet (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹520.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Khoya Kaju - Sweet" data-price="520">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="veggies">
+                    <div class="item-details">
+                        <h3>Matar Methi Masala (360g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹450.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Matar Methi Masala" data-price="450">Add to Cart</button>
+                </div>
+
+                <!-- BREADS -->
+                <div class="menu-item" data-category="breads">
+                    <div class="item-details">
+                        <h3>3 Cheese Fungi Mince</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹250.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="3 Cheese Fungi Mince" data-price="250">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="breads">
+                    <div class="item-details">
+                        <h3>Lal Mirch Paneer Tikka</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹200.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Lal Mirch Paneer Tikka" data-price="200">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="breads">
+                    <div class="item-details">
+                        <h3>Cheesy Aloo Matar</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹180.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Cheesy Aloo Matar" data-price="180">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="breads">
+                    <div class="item-details">
+                        <h3>Stuffed Chur Chur Naan (180g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹100.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Stuffed Chur Chur Naan" data-price="100">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="breads">
+                    <div class="item-details">
+                        <h3>Foccaccia Herbs</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹200.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Foccaccia Herbs" data-price="200">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="breads">
+                    <div class="item-details">
+                        <h3>Plain Tandoori Roti</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹50.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Plain Tandoori Roti" data-price="50">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="breads">
+                    <div class="item-details">
+                        <h3>Butter Tandoori Roti</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹60.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Butter Tandoori Roti" data-price="60">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="breads">
+                    <div class="item-details">
+                        <h3>Hariyali Naan (210g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹150.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Hariyali Naan" data-price="150">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="breads">
+                    <div class="item-details">
+                        <h3>Cheese Chilly Garlic Naan</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹200.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Cheese Chilly Garlic Naan" data-price="200">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="breads">
+                    <div class="item-details">
+                        <h3>Smoked Paprika Naan</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹150.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Smoked Paprika Naan" data-price="150">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="breads">
+                    <div class="item-details">
+                        <h3>Plain Naan</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹90.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Plain Naan" data-price="90">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="breads">
+                    <div class="item-details">
+                        <h3>Butter Naan</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹100.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Butter Naan" data-price="100">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="breads">
+                    <div class="item-details">
+                        <h3>Fulka Roti (Plain / Butter) (20g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹50.00 / ₹60.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Fulka Roti" data-price="50">Add to Cart</button>
+                </div>
+
+                <!-- GLOBAL SHARINGS & SIZZLERS -->
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Paneer Shwarma Platter (380g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹650.00</span>
+                    </div>
+                    <p class="item-desc">Creamy hummus korma , falafel, zatar sauteed veggies, Grilled pita squares and lebanese pilaf rice</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Paneer Shwarma Platter" data-price="650">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Chipotle Rice & Curry (380g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹650.00</span>
+                    </div>
+                    <p class="item-desc">Mexian bean pepper rice with pickled veggies, salsa, sour cream, Cheesy fires fried nachos & spicy red mole curry</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Chipotle Rice & Curry" data-price="650">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Kimchi Fired Rice (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <p class="item-desc">Korean style spicy fried with kimchi paste & pickled chinese cabbage</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Kimchi Fired Rice" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Burnt Garlic Fried Rice (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <p class="item-desc">Wok tossed rice with burnt garlic & truffle oil</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Burnt Garlic Fried Rice" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Carrot Corn Fired Rice (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <p class="item-desc">Sticky rice with corn and grated carrots - a must try</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Carrot Corn Fired Rice" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Truffle Mushroom Fried Rice (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">Stir fried rice with truffle oil & wild mushrooms</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Truffle Mushroom Fried Rice" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Miso Sichuan Ramen Bowl (380g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">spicy sichuan broth with miso, vegetables & crispy chilly</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Miso Sichuan Ramen Bowl" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Tempura Veggies & Chilly Garlic Noodle (380g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">hoisin sauce, batter fired veggies in sichuan, fried garlic & parmesan</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Tempura Veggies & Chilly Garlic Noodle" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Mie Goreng Noodles (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <p class="item-desc">Indonesian style wok stir fried noodle with paneer, garlic, shallots, chinese cabbage, green onions</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Mie Goreng Noodles" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Spicy Dan Dan Noodles (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹550.00</span>
+                    </div>
+                    <p class="item-desc">wok tossed chilly oil infused noodles with veggies, served topped with spicy mince of cottage cheese and veggies in spicy chilly sauce</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Spicy Dan Dan Noodles" data-price="550">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Sichuan Noodles (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <p class="item-desc">with red cabbage, peppers, leeks & scallions</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Sichuan Noodles" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Thai Curry - Steamed Basil Rice (380g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹650.00</span>
+                    </div>
+                    <p class="item-desc">choice of curries green curry / red curry with vegetables & paneer</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Thai Curry - Steamed Basil Rice" data-price="650">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Panang Curry (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹480.00</span>
+                    </div>
+                    <p class="item-desc">rich & creamy thai style spicy curry made of peanut paste & coconut milk</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Panang Curry" data-price="480">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Black Pepper Curry (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹480.00</span>
+                    </div>
+                    <p class="item-desc">mushrooms / paneer veggie in black pepper paste with Thai basil. Spicy, aromatic, and bold</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Black Pepper Curry" data-price="480">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Mapo Tofu - Spicy (350g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹500.00</span>
+                    </div>
+                    <p class="item-desc">chinese style fiery red sauce with clay pot veggies & tofu</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Mapo Tofu - Spicy" data-price="500">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Fiery Dragons Plate Sizzler (420g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹750.00</span>
+                    </div>
+                    <p class="item-desc">nazi goreng rice, wok tossed hoisin noodle, saatted veggies, potato wedges and black pepper sauces</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Fiery Dragons Plate Sizzler" data-price="750">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Sizzling Yellow Shahslik Platter (420g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹750.00</span>
+                    </div>
+                    <p class="item-desc">cubes of tandoori cottage cheese in creamy yellow mustard curry with butter beans, carrots, bechamel potato and lemon butter irce</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Sizzling Yellow Shahslik Platter" data-price="750">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Classical Tex Mex Rice Sizzler (420g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹750.00</span>
+                    </div>
+                    <p class="item-desc">nachos, cheese sauce, tex mex curry, broccomole, sauteed veggies and corn bean rice</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Classical Tex Mex Rice Sizzler" data-price="750">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="globalsizzlers">
+                    <div class="item-details">
+                        <h3>Italian Sizzante (420g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹750.00</span>
+                    </div>
+                    <p class="item-desc">spaghetti / penne with sauteed veggies, fries, garlic bread, qautro formaggi sauce & arrabbiatta sauce</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Italian Sizzante" data-price="750">Add to Cart</button>
+                </div>
+
+                <!-- SALADS & SIDES -->
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Papad Platter (280g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹350.00</span>
+                    </div>
+                    <p class="item-desc">Assortment of various papads served with dips and sides</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Papad Platter" data-price="350">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Classical Caesar Salad (240g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹280.00</span>
+                    </div>
+                    <p class="item-desc">Romaine lettuce, bread crumbs, mayo cream, mustard and parmesan</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Classical Caesar Salad" data-price="280">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Sichuan Peanut Pepper Salad (240g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹250.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Sichuan Peanut Pepper Salad" data-price="250">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Tossed Green Salad (240g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹250.00</span>
+                    </div>
+                    <p class="item-desc">Cubes of greens tossed in lemon pepper dressing wuth kasundi</p>
+                    <button class="btn-primary add-to-cart-btn" data-name="Tossed Green Salad" data-price="250">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Cheese Masala Papad (175g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹150.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Cheese Masala Papad" data-price="150">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Green Salad (240g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹180.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Green Salad" data-price="180">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Mix Veg Raita (180g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹150.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Mix Veg Raita" data-price="150">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Cucumber Boondi Raita (180g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹130.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Cucumber Boondi Raita" data-price="130">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Pineapple Raita (180g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹150.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Pineapple Raita" data-price="150">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Plain Curd (180g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹100.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Plain Curd" data-price="100">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Roasted Papad (12g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹50.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Roasted Papad" data-price="50">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Fried Papad (12g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹60.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Fried Papad" data-price="60">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Masala Papad (175g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹100.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Masala Papad" data-price="100">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Khamni Sev Cheese Masala Papad (175g)</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹120.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Khamni Sev Cheese Masala Papad" data-price="120">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="salads">
+                    <div class="item-details">
+                        <h3>Butter Milk - Masala / Plain</h3>
+                        <div class="item-dots"></div>
+                        <span class="item-price">₹80.00 / ₹90.00</span>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" data-name="Butter Milk" data-price="80">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Gallery Grid -->
+    <section id="gallery" class="gallery-section">
+        <div class="gallery-grid">
+            <div class="img-wrapper"><img src="700253149_18099573181921790_5790426975965228960_n.webp" alt="Tempura"></div>
+            <div class="img-wrapper"><img src="705428849_18100667512921790_25002184540215170_n.webp" alt="Spaghetti"></div>
+            <div class="img-wrapper"><img src="721224178_18103849264921790_624005799468483617_n.webp" alt="Dumplings"></div>
+            <div class="img-wrapper"><img src="729828926_18106261603921790_7771939417483304148_n.webp" alt="Potato Wedges"></div>
+            <div class="img-wrapper"><img src="afgani paneer.webp" alt="Paneer"></div>
+            <div class="img-wrapper"><img src="714263772_18102514006921790_6792167951403817775_n.webp" alt="Dessert"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="670226002_18091863955921790_3690312371251393535_n.jpg" alt="Logo" class="footer-logo">
+            <p>123 Culinary Avenue, Food District, India</p>
+            <p>reservation@statusdine.com | +91 123 456 7890</p>
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+            <p class="copyright">&copy; 2026 Status Dine. Crafted for Excellence.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Order</h2>
+            <button id="close-cart" class="close-btn">&times;</button>
+        </div>
+        
+        <!-- Dine-in or Delivery Option -->
+        <div class="order-type">
+            <label><input type="radio" name="orderType" value="Dine-in" checked> Dine-in</label>
+            <label><input type="radio" name="orderType" value="Delivery"> Delivery</label>
+        </div>
+        
+        <div class="cart-items" id="cart-items-container">
+            <!-- Cart items will be injected here by JavaScript -->
+        </div>
+        
+        <div class="cart-total">
+            Total: ₹<span id="cart-total-price">0</span>
+        </div>
+        <button class="btn-primary checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

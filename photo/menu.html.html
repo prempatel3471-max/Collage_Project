@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f7f4ec;
+            color: #5a554b;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        
+        .menu-spread {
+            background-color: #fcfbf7;
+            border: 2px dashed #e6dec3;
+            border-radius: 12px;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        
+        .menu-spread::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            bottom: 20px;
+            width: 30px;
+            background-image: radial-gradient(#e6dec3 20%, transparent 20%);
+            background-size: 10px 10px;
+            opacity: 0.4;
+        }
+
+        .menu-spread.single-page {
+            grid-template-columns: 1fr;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .content-column {
+            margin-left: 30px;
+        }
+        
+        h2.section-title {
+            color: #c75c32;
+            font-size: 1.4em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 3px double #e6dec3;
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        /* Image 1 Specific Styles */
+        .info-section { margin-bottom: 35px; }
+        .info-title {
+            color: #c75c32;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .info-desc { font-size: 0.9em; color: #7a756b; line-height: 1.5; }
+        .terms-list {
+            list-style: none; padding: 0; font-size: 0.75em; line-height: 1.8; color: #7a756b;
+        }
+        .terms-list li::before {
+            content: '•'; color: #c75c32; font-weight: bold; display: inline-block; width: 1em; margin-left: -1em;
+        }
+        .terms-list li { padding-left: 1em; margin-bottom: 6px; text-transform: uppercase; }
+        
+        /* Menu Item Styles */
+        .menu-item { margin-bottom: 22px; break-inside: avoid; }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+        .item-name {
+            font-weight: 700;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            color: #4a453b;
+            flex: 1;
+            padding-right: 15px;
+        }
+        .item-weight {
+            font-size: 0.75em;
+            color: #999;
+            font-weight: 400;
+            margin-left: 4px;
+            text-transform: lowercase;
+            white-space: nowrap;
+        }
+        .item-price {
+            font-weight: 600;
+            color: #c75c32;
+            font-size: 0.95em;
+            white-space: nowrap;
+        }
+        .item-desc {
+            font-size: 0.8em;
+            color: #8c877d;
+            line-height: 1.4;
+            margin: 0;
+            padding-right: 20px;
+        }
+        
+        .sub-item {
+            margin-left: 15px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 800px) {
+            .menu-spread {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+
+    <!-- Image 1 -->
+    <div class="menu-spread single-page">
+        <div class="content-column">
+            <div class="info-section">
+                <div class="info-title">BANQUET HALL AVAILABLE</div>
+                <div class="info-desc">(100 TO 1500 PERSONS)</div>
+            </div>
+            <div class="info-section">
+                <div class="info-title">PARTY LAWN AVAILABLE</div>
+                <div class="info-desc">(100 TO 800 PERSONS)</div>
+            </div>
+            <div class="info-section">
+                <div class="info-title">38 ROOMS AVAILABLE</div>
+                <div class="info-desc">(UP TO 4 OCCUPANCY IN A ROOM)</div>
+            </div>
+            <div class="info-section">
+                <div class="info-title">CONFERENCE HALL AVAILABLE</div>
+            </div>
+            <div class="info-section">
+                <div class="info-title">RESTURANT TIMING</div>
+                <div class="info-desc">LUNCH TIME : 11 : 00AM TO 3 : 00PM<br>DINNER TIME : 6 : 00 TO 11 : 00PM</div>
+            </div>
+            
+            <h2 class="section-title" style="font-size: 1.2em; margin-top: 20px;">TERMS & CONDITIONS</h2>
+            <ul class="terms-list">
+                <li>ORDER ONCE PLACED WILL NOT BE CANCELLED</li>
+                <li>KINDLY ALLOW AS MINIMUM 30 MINUTES TO SERVE YOUR AFTER PLACING ORDER</li>
+                <li>ITEMS WILL BE SERVED ONLY ON SUBJECT TO AVAILABLITITY</li>
+                <li>OUTSIDE FOOD & LIQUOR NOT ALLOWED</li>
+                <li>GST TAX WILL BE APPLICABLE AS PER GOVERNMENT RULES</li>
+                <li>TAXES & RATES ARE SUBJECT TO CHANGE WITHOUT ANY PRIOR NOTICE</li>
+                <li>PARKING SOLELY AT OWNER'S RISK</li>
+                <li>ALL RIGHT OF ADMISSION ARE RESERVE BY MANAGEMENT</li>
+                <li>TERMS & CONDITIONS APPLY</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="menu-spread">
+        <!-- Left Column -->
+        <div class="content-column">
+            <h2 class="section-title">MAIN COURSE - PANEER</h2>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PANEER MAKHNA KHATTA PYAZ<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+                <p class="item-desc">Tomato masala, pickled onions, makhna</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">DELHI STYLE BUTTER MASALA<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+                <p class="item-desc">Tandoori paneer tikka, fenugreek flavoured butter masala</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PANEER TIKKA KALIMIRCH MASALA<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+                <p class="item-desc">Stuffed cottage cheese served in black pepper cashew gravy</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">MUGHLAI MUSHROOM MUTTER PANEER<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+                <p class="item-desc">Poppy seed cashew yogurt gravy, coriander green chilly paste</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">STUFFED PANEER PESHAWARI<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+                <p class="item-desc">Crumbles of cottage cheese, cooked in masala gravy served creamy curry</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CHEESY ACHARI PANEER AWADH MASALA<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+                <p class="item-desc">Mustard marinated paneer tikka with peppers in tomato awadhi masala</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">MALAI PANEER SAAG<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+                <p class="item-desc">With makhna in creamy and garlicy spinach gravy</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PANEER WALNUT MAKHNI<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+                <p class="item-desc">Stuffed paneer pinwheel in pepper spiced tomato pudhina shorba masala</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">SRIRACHA PANEER TIKKA LEBABDAAR<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+                <p class="item-desc">Tandoor grilled sriracha paneer in classical lebabadar masala</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PANEER BHURJI - BROWN GRAVY<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PANEER TAWA BHUNA MASALA<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PANEER PASANDA / TOOFANI / PALAK PANEER<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">KAJU PANEER MASALA / PANEER CORN METHI MASALA<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 20px;">MAIN COURSE - KOFTA</h2>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">AVADHI KOFTA<span class="item-weight">(380g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+                <p class="item-desc">Cottage cheese, nuts & khoya dumplings, dry fenugreek, roasted tomato sauce</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CHEESY ALOO MUTTER KOFTA<span class="item-weight">(380g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+                <p class="item-desc">Lotus root dumplings, lotus chips, fenugreek scented cashew cream sauce</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">TANDOORI PHOLON KA KOFTA, PESHAWARI CURRY<span class="item-weight">(380g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+                <p class="item-desc">Spice grilled mash of tandoori flowers in lahori style yellow curry & burnt chilly oil</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PATRANI PANEER - GOAN CURRY<span class="item-weight">(380g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">Colocasia leaves wrapped cottage cheese served in spicy tangy goan curry</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CHEESE BUTTER MASALA<span class="item-weight">(380g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">KOFTA SHAAM SAVERA<span class="item-weight">(380g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">A classic prepartion of kofta in brown gravy</p>
+            </div>
+        </div>
+        
+        <!-- Right Column -->
+        <div class="content-column">
+            <h2 class="section-title">MAIN COURSE - VEGGIES</h2>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">BHARWAN ALOO PESHAWARI<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">450.00</span>
+                </div>
+                <p class="item-desc">Tandoori stuffed potato roulade in yellow peshawari style gravy, crispy spinach</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CORN PALAK MASALA<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+                <p class="item-desc">Cream cheese, spinach puree, fried garlic</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">VEGETABLE KURCHAN<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">450.00</span>
+                </div>
+                <p class="item-desc">Caramelised onion tomato masala with whole spices and fried chilly</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">STUFFED BHINDI TAMATAR MALAI MASALA<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">450.00</span>
+                </div>
+                <p class="item-desc">Ajwaini bhindi masala in black pepper flavored Cashew curry and fried curry leaves</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">MUSHROOM / VEGETABLE MATAR LEBABDAR<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+                <p class="item-desc">Pan tossed mutter with shallots, fresh mushrooms in lebabdar masala</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">ROASTED TADKA VEGETABLES KORMA<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">450.00</span>
+                </div>
+                <p class="item-desc">Creamy cashew yellow curry with red chilly tadka</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">KADHAI MAKHNA VEGETABLE<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">450.00</span>
+                </div>
+                <p class="item-desc">Array of mix veggies in brown onion masala with fox nuts</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">SPICY KAJU CURRY<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">TANDOORI VEG TIKKA LEBABDAR<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">450.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">KHOYA KAJU - SWEET<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">520.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">MATAR METHI MASALA<span class="item-weight">(360g)</span></span>
+                    <span class="item-price">450.00</span>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 20px;">BREADS</h2>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">BHARWAN KULCHA/PARATHA <span class="item-weight">(180g)</span></span>
+                </div>
+                <div class="sub-item">
+                    <div class="item-header"><span class="item-name">3 CHEESE FUNGI MINCE</span><span class="item-price">250.00</span></div>
+                    <div class="item-header"><span class="item-name">LAL MIRCH PANEER TIKKA</span><span class="item-price">200.00</span></div>
+                    <div class="item-header"><span class="item-name">CHEESY ALOO MATAR</span><span class="item-price">180.00</span></div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">STUFFED CHUR CHUR NAAN<span class="item-weight">(180g)</span></span>
+                    <span class="item-price">100.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">TANDOORI ROTI<span class="item-weight">(45g)</span></span>
+                </div>
+                <div class="sub-item">
+                    <div class="item-header"><span class="item-name">FOCCACCIA HERBS</span><span class="item-price">200.00</span></div>
+                    <div class="item-header"><span class="item-name">PLAIN</span><span class="item-price">50.00</span></div>
+                    <div class="item-header"><span class="item-name">BUTTER</span><span class="item-price">60.00</span></div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">NAAN<span class="item-weight">(210g)</span></span>
+                </div>
+                <div class="sub-item">
+                    <div class="item-header"><span class="item-name">HARIYALI</span><span class="item-price">150.00</span></div>
+                    <div class="item-header"><span class="item-name">CHEESE CHILLY GARLIC</span><span class="item-price">200.00</span></div>
+                    <div class="item-header"><span class="item-name">SMOKED PAPRIKA</span><span class="item-price">150.00</span></div>
+                    <div class="item-header"><span class="item-name">PLAIN</span><span class="item-price">90.00</span></div>
+                    <div class="item-header"><span class="item-name">BUTTER</span><span class="item-price">100.00</span></div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">FULKA ROTI (PLAIN / BUTTER)<span class="item-weight">(20g)</span></span>
+                    <span class="item-price">50.00 / 60.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="menu-spread">
+        <!-- Left Column -->
+        <div class="content-column">
+            <h2 class="section-title">SUSHI & DIMSUMS</h2>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">TURFFLE EDAMAMME CHESTNUT DUMPLINGS<span class="item-weight">(6pcs)(240g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">In massaman curry, chilly oil, tempura crisp and kaffir lime</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">HUNAN VEGGIES STUFFED DUMPLINGS<span class="item-weight">(6pcs)(240g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">Japanese mayo, teriyaki mayo and chilly garlic crisp fried spinach</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">MUSHROOM CHEESE DUMPLINGS<span class="item-weight">(6pcs)(240g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">Green khau suey dip, cruspy garlic and fried onions</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">TERIYAKI TEMPURA SUSHI<span class="item-weight">(6pcs)(240g)</span></span>
+                    <span class="item-price">600.00</span>
+                </div>
+                <p class="item-desc">Gari, wasabi and okonomiyaki topping</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">NEWYORK STYLE SUSHI - CHIPOTLE<span class="item-weight">(6pcs)(240g)</span></span>
+                    <span class="item-price">600.00</span>
+                </div>
+                <p class="item-desc">Avocado cream cheese edamamme & wasabi cream</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">SICHUAN TEMPURA BAO<span class="item-weight">(6pcs)(240g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+                <p class="item-desc">Tempura veggies tossed in sichuan hoisin sauce. Simple mayo piping</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">KUNG PAO PANEER BAO<span class="item-weight">(6pcs)(240g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+                <p class="item-desc">Served topped with 3 peppers & hot sauce mayo piping</p>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 20px;">SIGNATURE CHAATS</h2>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">THAI PAV BHAJI KI CHAAT<span class="item-weight">(260g)</span></span>
+                    <span class="item-price">350.00</span>
+                </div>
+                <p class="item-desc">Kafir lime butter tossed mini pavs & green & red thai bhaji</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CHANDRAKALA KI CHAAT<span class="item-weight">(260g)</span></span>
+                    <span class="item-price">350.00</span>
+                </div>
+                <p class="item-desc">Spicy tamatar ki chaat with sweet rasa boondi, ratlami sev & crispy wontons</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">TEMPURA ZATAR PALAK PATTE KI CHAAT<span class="item-weight">(260g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+                <p class="item-desc">Guacamole, zatar, peach tamarind pulp, chilly oil & yogurt</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">SPICY AAM PAPAD DAHI WADA<span class="item-weight">(260g)</span></span>
+                    <span class="item-price">350.00</span>
+                </div>
+                <p class="item-desc">Kurkuri bhindi & kurkure</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">JALEBI KI CHAAT<span class="item-weight">(260g)</span></span>
+                    <span class="item-price">450.00</span>
+                </div>
+                <p class="item-desc">Bhaji masala, charra aloo and creamy yogurt</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PAANI POORI<span class="item-weight">(8pcs poori & 3water)</span></span>
+                    <span class="item-price">200.00</span>
+                </div>
+                <p class="item-desc">Sooji ke golgappe, achari tamarind chutney, Kasundi peanut aloo singoda masala</p>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="content-column">
+            <h2 class="section-title">CRUST PIZZA 9"</h2>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">AKA 3 CHEESE MUSHROOMS</span>
+                    <span class="item-price">590.00</span>
+                </div>
+                <p class="item-desc">Onions, mushrooms, truffle oil, fresh leaves, capers, tomatoes and red pesto</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PARIS LOVE</span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">Mozarella, cream cheese, cheddar, caramelised onions, Balsamic, walnuts, broccoli, water chestnut</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CHEESEY MARGHERITA</span>
+                    <span class="item-price">590.00</span>
+                </div>
+                <p class="item-desc">Pesto, tomato pazzatta, aragula, avocado, sundried Tomatoes, black olives, jalapeno, mozarella, parmesan</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">TERIYAKI PIZZA</span>
+                    <span class="item-price">590.00</span>
+                </div>
+                <p class="item-desc">Sriracha tomato sauce, persian salad, teriyaki Cottage cheese, chilly garlic crisp and mozarella</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">THE GREEK</span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">Spinach, crumbled cottage cheese, corn, goat cheese, cheddar and bechamel</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">SRIRACHA PANEER TIKKA</span>
+                    <span class="item-price">590.00</span>
+                </div>
+                <p class="item-desc">Charcoal roasted paneer tikka spread over the pizza Generously topped with cheese & seasoning</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PIZZA VEGGIE DELIGHT</span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">Veggie over load pizza with mozarella, garlic mayo and feta cheese</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CHEESE CHILLY PIZZA</span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">Our take on classical cheese chilly in form of pizza with Chutney spread, cheddar cheese and fried chillies</p>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 20px;">PASTAS</h2>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PENNE PASTA DEL BARONE<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">Parmesan cheese, cream sauce and red sauce</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">SPAGHETTI MARINARA<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">Rustic italian tomato sauce with capers, black olives, Basil, parmesan can select your pasta</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">MIX PASTA ALA NORMA<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">Ricotta, basil, nuts, zucchini, olives and tomato sauce with parmesan</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">AL PESTO GENOVESE<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">590.00</span>
+                </div>
+                <p class="item-desc">Basil pinenut pesto with burrata cheese, basil oil and parmesan</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">RAVIOLI CACIO PEPPE<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">590.00</span>
+                </div>
+                <p class="item-desc">Cheddar cheese sauce with burnt blackpepper</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PENNE ALFREDO AGLI OLIO<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">Creamy fettucini with italian style burt chilly oil</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">BAKED LASAGNE<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">590.00</span>
+                </div>
+                <p class="item-desc">Layered italian pasta sheets with veggies, parmesan, Mozrella and classic italian pasatta</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CHIPOTLE BAKED MACARONI & TANDOORI PINEAPPLE<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image 4 -->
+    <div class="menu-spread">
+        <!-- Left Column -->
+        <div class="content-column">
+            <h2 class="section-title">GLOBAL SHARINGS & SIZZLERS</h2>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PANEER SHWARMA PLATTER<span class="item-weight">(380g)</span></span>
+                    <span class="item-price">650.00</span>
+                </div>
+                <p class="item-desc">Creamy hummus korma, falafel, zatar sauteed veggies, Grilled pita squares and lebanese pilaf rice</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CHIPOTLE RICE & CURRY<span class="item-weight">(380g)</span></span>
+                    <span class="item-price">650.00</span>
+                </div>
+                <p class="item-desc">Mexian bean pepper rice with pickled veggies, salsa, sour cream, Cheesy fires fried nachos & spicy red mole curry</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">KIMCHI FIRED RICE<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+                <p class="item-desc">Korean style spicy fried with kimchi paste & pickled chinese cabbage</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">BURNT GARLIC FRIED RICE<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+                <p class="item-desc">Wok tossed rice with burnt garlic & truffle oil</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CARROT CORN FIRED RICE<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+                <p class="item-desc">Sticky rice with corn and grated carrots - a must try</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">TRUFFLE MUSHROOM FRIED RICE<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">stir fried rice with truffle oil & wild mushrooms</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">MISO SICHUAN RAMEN BOWL<span class="item-weight">(380g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">spicy sichuan broth with miso, vegetables & crispy chilly</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">TEMPURA VEGGIES & CHILLY GARLIC NOODLE<span class="item-weight">(380g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">hoisin sauce, batter fired veggies in sichuan, fried garlic & parmesan</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">MIE GORENG NOODLES<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+                <p class="item-desc">Indonesian style wok stir fried noodle with paneer, garlic, shallots, chinese cabbage, green onions</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">SPICY DAN DAN NOODLES<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">550.00</span>
+                </div>
+                <p class="item-desc">wok tossed chilly oil infused noodles with veggies, served topped with spicy mince of cottage cheese and veggies in spicy chilly sauce</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">SICHUAN NOODLES<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+                <p class="item-desc">with red cabbage, peppers, leeks & scallions</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">THAI CURRY - STEAMED BASIL RICE<span class="item-weight">(380g)</span></span>
+                    <span class="item-price">650.00</span>
+                </div>
+                <p class="item-desc">choice of curries green curry / red curry with vegetables & paneer</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PANANG CURRY<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">480.00</span>
+                </div>
+                <p class="item-desc">rich & creamy thai style spicy curry made of peanut paste & coconut milk</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">BLACK PEPPER CURRY<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">480.00</span>
+                </div>
+                <p class="item-desc">mushrooms / paneer veggie in black pepper paste with Thai basil. Spicy, aromatic, and bold</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">MAPO TOFU - SPICY<span class="item-weight">(350g)</span></span>
+                    <span class="item-price">500.00</span>
+                </div>
+                <p class="item-desc">Chinese style fiery red sauce with clay pot veggies & tofu</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">FIERY DRAGONS PLATE SIZZLER<span class="item-weight">(420g)</span></span>
+                    <span class="item-price">750.00</span>
+                </div>
+                <p class="item-desc">nazi goreng rice, wok tossed hoisin noodle, sautted veggies, potato wedges and black pepper sauces</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">SIZZLING YELLOW SHAHSLIK PLATTER<span class="item-weight">(420g)</span></span>
+                    <span class="item-price">750.00</span>
+                </div>
+                <p class="item-desc">cubes of tandoori cottage cheese in creamy yellow mustard curry with butter beans, carrots, bechamel potato and lemon butter irce</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CLASSICAL TEX MEX RICE SIZZLER<span class="item-weight">(420g)</span></span>
+                    <span class="item-price">750.00</span>
+                </div>
+                <p class="item-desc">nachos, cheese sauce, tex mex curry, broccomole, sauteed veggies and corn bean rice</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">ITALIAN SIZZANTE<span class="item-weight">(420g)</span></span>
+                    <span class="item-price">750.00</span>
+                </div>
+                <p class="item-desc">spaghetti / penne with sauteed veggies, fries, garlic bread, qautro formaggi sauce & arrabbiatta sauce</p>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="content-column">
+            <h2 class="section-title">SALADS & SIDES</h2>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PAPAD PLATTER<span class="item-weight">(280g)</span></span>
+                    <span class="item-price">350.00</span>
+                </div>
+                <p class="item-desc">Assortment of various papads served with dips and sides</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CLASSICAL CAESAR SALAD<span class="item-weight">(240g)</span></span>
+                    <span class="item-price">280.00</span>
+                </div>
+                <p class="item-desc">Romaine lettuce, bread crumbs, mayo cream, mustard and parmesan</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">SICHUAN PEANUT PEPPER SALAD<span class="item-weight">(240g)</span></span>
+                    <span class="item-price">250.00</span>
+                </div>
+                <p class="item-desc">Cubes of greens tossed in lemon pepper dressing wuth kasundi</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">TOSSED GREEN SALAD<span class="item-weight">(240g)</span></span>
+                    <span class="item-price">250.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CHEESE MASALA PAPAD<span class="item-weight">(175g)</span></span>
+                    <span class="item-price">150.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">GREEN SALAD<span class="item-weight">(240g)</span></span>
+                    <span class="item-price">180.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">MIX VEG RAITA<span class="item-weight">(180g)</span></span>
+                    <span class="item-price">150.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CUCUMBER BOONDI RAITA<span class="item-weight">(180g)</span></span>
+                    <span class="item-price">130.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PINEAPPLE RAITA<span class="item-weight">(180g)</span></span>
+                    <span class="item-price">150.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PLAIN CURD<span class="item-weight">(180g)</span></span>
+                    <span class="item-price">100.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">ROASTED PAPAD<span class="item-weight">(12g)</span></span>
+                    <span class="item-price">50.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">FRIED PAPAD<span class="item-weight">(12g)</span></span>
+                    <span class="item-price">60.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">MASALA PAPAD<span class="item-weight">(175g)</span></span>
+                    <span class="item-price">100.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">KHAMNI SEV CHEESE MASALA PAPAD<span class="item-weight">(175g)</span></span>
+                    <span class="item-price">120.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">BUTTER MILK - MASALA / PLAIN</span>
+                    <span class="item-price">80 / 90</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image 5 -->
+    <div class="menu-spread">
+        <!-- Left Column -->
+        <div class="content-column">
+            <h2 class="section-title">SOUPS</h2>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">3 CHEESE CORN SPINACH<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">300.00</span>
+                </div>
+                <p class="item-desc">Cheddar, parmesan and cream cheese with crackling spinach</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">BANGKOK HOT & SOUR<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">300.00</span>
+                </div>
+                <p class="item-desc">Thai style vegetable soup flavoured with kaffir lime, Lemon grass and galangal ingredients on side</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">VIETNAMESE MANCHOW<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">300.00</span>
+                </div>
+                <p class="item-desc">Vietnamese style spicy broth with julienne of Vegetable, noodles & leafy vegetables</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">ZUPPA D VEG - LEEKS<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">330.00</span>
+                </div>
+                <p class="item-desc">Truffle oil, thyme, parmesan and double cream</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">TOMATO PEPPER SOUP<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">300.00</span>
+                </div>
+                <p class="item-desc">Feta cheese, corn flakes, beans, celery, jalapenos, Chopped peppers and tortilla</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">SMOKED PUMPKIN BROCCOLI<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">330.00</span>
+                </div>
+                <p class="item-desc">Cheddar, broccoli, cream, broccoli grates and pumpkin cream</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">SWEET CORN LEMON CORRIANDER<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">300.00</span>
+                </div>
+                <p class="item-desc">Broth of corn, kaffir lime, corriander and lemon zest.</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">KHOW SUEY<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">350.00</span>
+                </div>
+                <p class="item-desc">Topped with brown onions, crispy potatoes and Served with various accompaniments</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CREAM OF TOMATO BASIL<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">300.00</span>
+                </div>
+                <p class="item-desc">Served with cheese grill slice</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">INDONESIAN SHOBA LASKA SOUP<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">300.00</span>
+                </div>
+                <p class="item-desc">Aromatic soup flavoured with coconut & kaffir lime</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">CROCKPOT THUKPA<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">330.00</span>
+                </div>
+                <p class="item-desc">Tibetian style hot & spicy soup with ingredients on side</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">KAFIR LEMON CORIANDER<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">300.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">MEXICAN TORTILLA SOUP<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">300.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">MUSHROOM CAPPUCCINO<span class="item-weight">(230ml)</span></span>
+                    <span class="item-price">350.00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="content-column">
+            <h2 class="section-title">MOCKTAILS</h2>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">3 FRUIT FIZZ<span class="item-weight">(300ml)</span></span>
+                    <span class="item-price">270.00</span>
+                </div>
+                <p class="item-desc">Fresh kiwi, pineapple & green grape juice topped with aerated beverages</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">ORANGE & BLOOD ORANGE<span class="item-weight">(300ml)</span></span>
+                    <span class="item-price">270.00</span>
+                </div>
+                <p class="item-desc">Orange juice, grenadine, lime juice & cherries</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">WATERMELON POMO FIZZ<span class="item-weight">(300ml)</span></span>
+                    <span class="item-price">270.00</span>
+                </div>
+                <p class="item-desc">With fresh watermelon, mint, lemon & ginger ale. Finished with aerated lime water</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">THE HOLY WATER<span class="item-weight">(300ml)</span></span>
+                    <span class="item-price">270.00</span>
+                </div>
+                <p class="item-desc">Litchi juice with few drops of blue curaçao, lemon & jalapeno. Served in salt rimmed glass</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PASSION FRUIT & MINT MOJITO<span class="item-weight">(300ml)</span></span>
+                    <span class="item-price">270.00</span>
+                </div>
+                <p class="item-desc">With mint leaves, lemon juice & pomegranate seeds</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PEACH BLUEBERRY SANGARIA<span class="item-weight">(300ml)</span></span>
+                    <span class="item-price">270.00</span>
+                </div>
+                <p class="item-desc">Grape juice, apple cider & carbonated water</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">LEBANON ROSE MOJITO<span class="item-weight">(300ml)</span></span>
+                    <span class="item-price">270.00</span>
+                </div>
+                <p class="item-desc">Lemon juice, sweet lime extract, rose flavor & rose petals</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">GUAVA MARGHARITA<span class="item-weight">(300ml)</span></span>
+                    <span class="item-price">270.00</span>
+                </div>
+                <p class="item-desc">Salt rim & amaretto</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">FRESH LIME SODA (SALT / SWEET)<span class="item-weight">(300ml)</span></span>
+                    <span class="item-price">250.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">PUNJABI LASSI (SALT / SWEET)<span class="item-weight">(300ml)</span></span>
+                    <span class="item-price">270.00</span>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 20px;">FRESH JUICE</h2>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">FRESH ORANGE JUICE<span class="item-weight">(300ml)</span></span>
+                    <span class="item-price">280.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">KIWI BASIL<span class="item-weight">(300ml)</span></span>
+                    <span class="item-price">280.00</span>
+                </div>
+                <p class="item-desc">Basil seeds & elderflower</p>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">LYCHEE PINEAPPLE<span class="item-weight">(300ml)</span></span>
+                    <span class="item-price">280.00</span>
+                </div>
+                <p class="item-desc">Passion fruit & elderflower</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

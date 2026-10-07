@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Dine | Crafted For Refined Dining</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <img src="logo.jpg" alt="Status Dine Logo" class="logo">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Ambiance</a></li>
+            <li><a href="#order">Menu & Order</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#banquet">Banquet</a></li>
+            <li><a href="#reserve">Reservations</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hidden">
+            <h1>Every arrival feels like Royalty</h1>
+            <p>CRAFTED FOR REFINED DINING</p>
+            <button class="btn" onclick="document.getElementById('reserve').scrollIntoView();">Book a Table</button>
+        </div>
+    </section>
+
+    <!-- Ambiance & Craftsmanship Section -->
+    <section id="about">
+        <h2 class="section-title hidden">Refined Dining Experience</h2>
+        <div class="grid-2">
+            <div class="hidden">
+                <img src="f6.webp" alt="Status Dine Interior" class="rounded-img">
+            </div>
+            <div class="hidden">
+                <p>Welcome to a space where culinary excellence meets architectural grandeur. Whether you are enjoying a quiet evening or hosting a grand celebration, our meticulously designed dining rooms set the perfect stage.</p>
+                <div class="grid-2" style="margin-top: 2rem;">
+                    <img src="f1.webp" alt="Table Setting" class="rounded-img">
+                    <img src="f2.jpg" alt="Chef Plating" class="rounded-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Ordering (Highlights) -->
+    <section id="order" class="bg-light">
+        <h2 class="section-title hidden">Culinary Masterpieces</h2>
+        <div class="grid-3">
+            <div class="menu-card hidden">
+                <img src="r13.webp" alt="Spaghetti Marinara">
+                <div class="card-content">
+                    <h3>Spaghetti Marinara</h3>
+                    <p class="desc">Rustic italian tomato sauce with capers, black olives, Basil, parmesan.</p>
+                    <p class="price">₹550.00</p>
+                    <button class="btn-small" onclick="addToCart('Spaghetti Marinara')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card hidden">
+                <img src="r11.webp" alt="Hunan Veggies Stuffed Dumplings">
+                <div class="card-content">
+                    <h3>Hunan Stuffed Dumplings</h3>
+                    <p class="desc">Japanese mayo, teriyaki mayo and chilly garlic crisp fried spinach.</p>
+                    <p class="price">₹550.00</p>
+                    <button class="btn-small" onclick="addToCart('Stuffed Dumplings')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card hidden">
+                <img src="r4.webp" alt="Afghani Paneer & Makhna Tikka">
+                <div class="card-content">
+                    <h3>Afghani Paneer & Makhna</h3>
+                    <p class="desc">Served fresh from the grill with seasonal garnishes.</p>
+                    <p class="price">₹520.00</p>
+                    <button class="btn-small" onclick="addToCart('Afghani Paneer')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card hidden">
+                <img src="r5.webp" alt="Korean Potato Wedges">
+                <div class="card-content">
+                    <h3>Korean Potato Wedges</h3>
+                    <p class="desc">Crispy and tossed in sweet, spicy, and sticky sauce.</p>
+                    <p class="price">₹450.00</p>
+                    <button class="btn-small" onclick="addToCart('Korean Wedges')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card hidden">
+                <img src="r14.webp" alt="Tempura Crispy Veg">
+                <div class="card-content">
+                    <h3>Tempura Crispy Veg</h3>
+                    <p class="desc">Batter-fried veggies tossed with signature seasonings.</p>
+                    <p class="price">₹450.00</p>
+                    <button class="btn-small" onclick="addToCart('Tempura Veg')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card hidden">
+                <img src="r12.webp" alt="Rabdi & Jalebi">
+                <div class="card-content">
+                    <h3>Rabdi & Jalebi</h3>
+                    <p class="desc">Traditional Indian dessert with rich reduced milk and crispy spirals.</p>
+                    <p class="price">₹350.00</p>
+                    <button class="btn-small" onclick="addToCart('Rabdi Jalebi')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Photo Gallery -->
+    <section id="gallery">
+        <h2 class="section-title hidden">Our Signature Collection</h2>
+        <div class="gallery-grid hidden">
+            <img src="r7.webp" alt="Chaat Special" class="gallery-img">
+            <img src="r8.webp" alt="Paneer Tikka" class="gallery-img">
+            <img src="r9.webp" alt="Chocolate Beverage" class="gallery-img">
+            <img src="r10.webp" alt="Global Sizzler Platter" class="gallery-img">
+            <img src="r3.webp" alt="Wok Tossed Veggies" class="gallery-img">
+            <img src="f4.webp" alt="Night Exterior View" class="gallery-img">
+        </div>
+    </section>
+
+    <!-- Banquet Booking -->
+    <section id="banquet" class="bg-dark">
+        <h2 class="section-title hidden" style="color: var(--primary-gold);">Host Your Grand Event</h2>
+        <div class="grid-2">
+            <div class="banquet-info hidden">
+                <h3>Event Facilities</h3>
+                <p>Status Dine is perfectly equipped to handle events of any scale with premium hospitality.</p>
+                <ul>
+                    <li>Banquet Hall (100 to 1500 Persons)</li>
+                    <li>Party Lawn (100 to 800 Persons)</li>
+                    <li>38 Accommodating Rooms</li>
+                    <li>Dedicated Conference Hall</li>
+                </ul>
+                <img src="f5.webp" alt="Banquet Setup" class="rounded-img" style="margin-top: 1.5rem;">
+            </div>
+            <div class="form-container hidden">
+                <h3>Banquet Inquiry</h3>
+                <form onsubmit="handleBanquet(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name / Company" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Select Venue Area</option>
+                            <option value="hall">Banquet Hall</option>
+                            <option value="lawn">Party Lawn</option>
+                            <option value="conference">Conference Hall</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-full">Request Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table Reservations -->
+    <section id="reserve">
+        <h2 class="section-title hidden">Reserve Your Table</h2>
+        <div class="form-container hidden" style="max-width: 600px; margin: 0 auto; border: 1px solid #ddd;">
+            <form onsubmit="handleReservation(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="grid-2" style="gap: 1rem;">
+                    <div class="form-group">
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="time" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Number of Guests</option>
+                        <option value="2">2 People</option>
+                        <option value="4">4 People</option>
+                        <option value="6">6 People</option>
+                        <option value="8+">8+ People</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-full">Confirm Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Status Dine. All Rights Reserved. | Designed for Excellence</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
